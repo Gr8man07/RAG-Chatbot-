@@ -64,7 +64,8 @@ Students often face confusion around co-op eligibility, application timelines, e
 - Future improvements may include multilingual support, voice input, and integration with Lambton’s student portal.
 
 ---
-##Reflection
+
+## Reflection
 
 1. How does the chatbot “understand” the question?
 The chatbot uses a Sentence Transformer model (like all-MiniLM-L6-v2) to convert both the user’s question and all the FAQ text chunks into numerical vectors (embeddings).
@@ -84,6 +85,7 @@ Several ways:
 •	Add a generative model (like GPT) to rewrite and summarize retrieved answers more naturally.
 •	Include a “no match” threshold, so it can admit when it doesn’t know.
 •	Connect it to multiple documents or databases, not just one FAQ.
+---
 
 ## Contact
 
