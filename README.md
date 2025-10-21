@@ -1,4 +1,7 @@
 # RAG-Chatbot-
+
+This project demonstrates how to build a simple Retrieval-Augmented Generation (RAG) chatbot using **Streamlit**, **SentenceTransformers**, and **FAISS**. The chatbot answers frequently asked questions about campus life by retrieving the most relevant response from a small FAQ dataset.
+
 #  Lambton College Co-op FAQ Chatbot (RAG-Based)
 
 ## Overview
@@ -10,6 +13,12 @@ This project implements a Retrieval-Augmented Generation (RAG) chatbot designed 
 ## Purpose
 
 Students often face confusion around co-op eligibility, application timelines, employer expectations, and academic requirements. This chatbot provides instant, reliable answers to common questions, helping students navigate the co-op process with confidence.
+
+The goal is to learn how RAG works by:
+- Creating a mini FAQ dataset
+- Encoding questions and answers into vector embeddings
+- Storing them in a FAISS vector database
+- Building a chatbot interface with Streamlit to answer user queries
 
 ---
 
