@@ -1,5 +1,4 @@
 # RAG-Chatbot-
-Lambton College Co-op FAQ Chatbot (RAG-Based)
 #  Lambton College Co-op FAQ Chatbot (RAG-Based)
 
 ## Overview
@@ -67,17 +66,17 @@ Students often face confusion around co-op eligibility, application timelines, e
 
 ## Reflection
 
-1. How does the chatbot “understand” the question?
+1. **How does the chatbot “understand” the question?**
 The chatbot uses a Sentence Transformer model (like all-MiniLM-L6-v2) to convert both the user’s question and all the FAQ text chunks into numerical vectors (embeddings).
 These vectors capture the meaning of the sentences, not just exact words.
 Then, it uses FAISS (a fast similarity search library) to compare the question’s vector with all FAQ vectors and find the most similar one. That’s how it “understands” what you’re asking.
 
-2. What happens if the user asks something not in the FAQ?
+2. **What happens if the user asks something not in the FAQ?**
 If the question doesn’t match anything in the FAQ, the chatbot will still try to return the closest match, even if it’s not correct. This can lead to irrelevant or confusing answers, because the system doesn’t know it’s outside its knowledge base.
 In a real system, you could handle this by setting a similarity threshold , if no FAQ entry is close enough, the bot would say something like:
 “Sorry, I don’t have an answer for that yet.”
 
-3. How could you improve this system to handle more questions or longer documents?
+3. **How could you improve this system to handle more questions or longer documents?**
 Several ways:
 •	Chunk large documents into smaller overlapping sections (so each embedding covers a reasonable amount of text).
 •	Use a larger or fine-tuned language model for more accurate understanding.
