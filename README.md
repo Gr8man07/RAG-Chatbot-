@@ -23,10 +23,12 @@ Students often face confusion around co-op eligibility, application timelines, e
 
 ## Project Structure
 
-- `rag_chatbot.py`: Core chatbot logic and RAG pipeline
-- `data/`: Contains indexed FAQ documents and co-op policy files
+- ├── faq_data.txt           # Contains at least 10 Q & A  FAQ documents and co-op policy pairs
+- ├── babs_app.py         # Main Streamlit app
+- ├── README.md              # Project documentation and overview
 - `vector_store/`: Preprocessed embeddings for retrieval
-- `README.md`: Project overview 
+
+
 
 ---
 
